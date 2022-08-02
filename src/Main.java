@@ -40,6 +40,7 @@ public class Main {
         // ДЕМОНСТРАЦИЯ работы класса SalesManager
         SalesManager salesManager = new SalesManager(Arrays.stream(mainBasket.clone()).asLongStream().toArray()); // клонируем набранную корзину, ghb массив с int в long
         System.out.println("Максимальное количество проданного одного товара в корзине " + salesManager.max());
+        System.out.println("Среднее количество проданного одного товара в корзине " + salesManager.average());
     }
 } // class Main
 
