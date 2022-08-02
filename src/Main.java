@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,7 +38,7 @@ public class Main {
         scanner.close();
 
         // ДЕМОНСТРАЦИЯ работы класса SalesManager
-        SalesManager salesManager = new SalesManager(mainBasket.clone()); // клонируем набранную корзину
+        SalesManager salesManager = new SalesManager(Arrays.stream(mainBasket.clone()).asLongStream().toArray()); // клонируем набранную корзину, ghb массив с int в long
         System.out.println("Максимальное количество проданного одного товара в корзине " + salesManager.max());
     }
 } // class Main
