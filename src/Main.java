@@ -39,6 +39,7 @@ public class Main {
         // ДЕМОНСТРАЦИЯ работы класса SalesManager
         SalesManager salesManager = new SalesManager(mainBasket.clone()); // клонируем набранную корзину
         System.out.println("Максимальное количество проданного одного товара в корзине " + salesManager.max());
+        System.out.println("Среднее количество проданного одного товара в корзине " + salesManager.average());
     }
 } // class Main
 
